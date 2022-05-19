@@ -14,10 +14,12 @@ const Car=function(make,speed){
     this.speed=speed;
 }
 Car.prototype.accelerate= function(){
-    console.log(this.speed+=10)
+    this.speed+=10;
+    console.log(`${this.make} going at ${this.speed} km/h`)
 }
 Car.prototype.brake= function(){
-    console.log(this.speed-=5)
+    this.speed-=5;
+    console.log(`${this.make} going at ${this.speed} km/h`)
 }
 const BMW=new Car('BMW',120);
 const Mercedes=new Car('Mercedes',95);
