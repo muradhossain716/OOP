@@ -1,4 +1,7 @@
 //class experssion
+const Person1= class{
+    
+}
 //class declareation
 class Person{
     constructor(name,birthYear){
